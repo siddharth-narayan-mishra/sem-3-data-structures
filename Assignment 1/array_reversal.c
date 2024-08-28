@@ -3,13 +3,13 @@
  * @brief Demonstrates various array operations including randomization and reversal.
  * @author Siddharth Narayan Mishra
  * @date August 28, 2024
- *
- * This file contains functions to generate random integers and demonstrate array reversal.
  */
 
 #include <stdio.h>
 #include <time.h>
 #include <stdlib.h>
+
+#define MAX_VALUE 1000
 
 /**
  * @brief Prints all elements of an integer array.
@@ -90,7 +90,7 @@ int main() {
     }
 
     // Fill the array with random integers (range: 1 to 1000)
-    randomiseArrayIntegers(arr, length, 1000);
+    randomiseArrayIntegers(arr, length, MAX_VALUE);
 
     // Print the original array
     printf("Randomised array:\n");
